@@ -1,0 +1,26 @@
+{
+  "name": "aestheticss",
+  "version": "1.0.0",
+  "description": "A CSS Template Project built by Charles Sabarillo and Ray Lawrence Henri Sison.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esfox/aestheticss.git"
+  },
+  "keywords": [
+    "CSS",
+    "Template"
+  ],
+  "author": "Charles Sabarillo and Ray Lawrence Henri Sison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esfox/aestheticss/issues"
+  },
+  "homepage": "https://github.com/esfox/aestheticss#readme",
+  "dependencies": {
+    "sass": "^1.26.5"
+  }
+}
