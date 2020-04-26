@@ -4,6 +4,7 @@
   "description": "A CSS Template Project built by Charles Sabarillo and Ray Lawrence Henri Sison.",
   "main": "index.js",
   "scripts": {
+    "start": "sass --watch scss/main.scss css/main.css",
     "test": "test"
   },
   "repository": {
