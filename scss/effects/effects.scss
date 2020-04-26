@@ -1,0 +1,33 @@
+$duration-fast: .25s;
+$zoom-amount: 1.1;
+$darken-amount: .85;
+
+.hover-zoom {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .hover-zoom-child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform $duration-fast
+  }
+
+  &:hover {
+
+    .hover-zoom-child {
+      transform: scale($zoom-amount);
+    }
+  }
+}
+
+.hover-darken {
+  transition: filter $duration-fast;
+
+  &:hover {
+    filter: brightness($darken-amount);
+  }
+}

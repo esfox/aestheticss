@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Effects</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet"/>
+
+  <style>
+
+  .bg-colored {
+    background: gray;
+  }
+
+  .sample {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .sample img {
+    object-fit: cover;
+    width: 22rem;
+    height: 22rem;
+  }
+    
+  </style>
+</head>
+<body>
+  <h1>Effects Module</h1>
+  <hr/>
+  <h2>Hover Effects</h2>
+
+  <section id="hover-zoom">
+    <div class="flex flex-wrap">
+      <div class="col-4 flex-centered">
+
+        <div class="hover-zoom sample m4">
+          <div class="hover-zoom-child flex-centered bg-colored">
+            <h1>I'm a child</h1>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-4 flex-centered">
+
+        <div class="hover-zoom sample m4">
+          <div class="hover-zoom-child">
+            <img src="https://post.healthline.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg">
+          </div>
+        </div>
+
+      </div>
+      <div class="col-4 flex-centered">
+
+        <div class="hover-darken sample m4">
+          <div class="hover-zoom-child">
+            <img src="https://post.healthline.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg">
+          </div>
+        </div>
+
+      </div>
+      <div class="col-4 flex-centered">
+
+        <div class="hover-zoom hover-darken sample m4">
+          <div class="hover-zoom-child">
+            <img src="https://post.healthline.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</body>
+</html>
