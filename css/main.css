@@ -784,5 +784,28 @@ button.outlined-hover-fill:hover {
   box-shadow: inset 0px 0px 0px 25px #616161;
   color: white;
 }
+.hover-zoom {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.hover-zoom .hover-zoom-child {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.25s;
+}
+.hover-zoom:hover .hover-zoom-child {
+  transform: scale(1.1);
+}
+
+.hover-darken {
+  transition: filter 0.25s;
+}
+.hover-darken:hover {
+  filter: brightness(0.85);
+}
 
 /*# sourceMappingURL=main.css.map */
