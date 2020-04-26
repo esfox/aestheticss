@@ -1,0 +1,10 @@
+@import '../mixins/color-mixins.scss';
+@import '../variables/colors.scss';
+
+@include assign_background_colors($color_collection);
+@include assign_text_colors($color_collection);
+@include assign_border_top_colors($color_collection);
+@include assign_border_left_colors($color_collection);
+@include assign_border_bottom_colors($color_collection);
+@include assign_border_right_colors($color_collection);
+@include assign_border_full_colors($color_collection);

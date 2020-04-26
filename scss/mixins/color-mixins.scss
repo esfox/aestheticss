@@ -1,0 +1,55 @@
+@mixin assign_background_colors($collection) {
+    @each $item, $color in $collection {
+        .bg-#{$item} {
+            background-color: $color !important;
+        }
+    }
+}
+
+@mixin assign_text_colors($collection) {
+    @each $item, $color in $collection {
+        .text-#{$item} {
+            color: $color !important;
+        }
+    }
+}
+
+@mixin assign_border_top_colors($collection) {
+    @each $item, $color in $collection {
+        .border-top-#{$item} {
+            border-top-color: $color !important;
+        }
+    }
+}
+
+@mixin assign_border_left_colors($collection) {
+    @each $item, $color in $collection {
+        .border-left-#{$item} {
+            border-left-color: $color !important;
+        }
+    }
+}
+
+@mixin assign_border_bottom_colors($collection) {
+    @each $item, $color in $collection {
+        .border-bottom-#{$item} {
+            border-bottom-color: $color !important;
+        }
+    }
+}
+
+@mixin assign_border_right_colors($collection) {
+    @each $item, $color in $collection {
+        .border-right-#{$item} {
+            border-right-color: $color !important;
+        }
+    }
+}
+
+@mixin assign_border_full_colors($collection) {
+    @each $item, $color in $collection {
+        .border-full-#{$item} {
+            border-right-color: $color !important;
+        }
+    }
+}
