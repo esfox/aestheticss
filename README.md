@@ -4,8 +4,9 @@ A css template project.
 
 # Prerequisites
 
-1. NPM
-2. Node
+1. Node v12.6.0
+2. npm@6.9.0
+3. pnpm@4.14.0
 
 # Conventions
 
