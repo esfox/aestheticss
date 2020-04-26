@@ -596,4 +596,193 @@
   align-items: center;
 }
 
+.full-center {
+  /*
+    forces an element's contents to be centered
+    both vertically and horizontally
+    in the container where this class
+    is applied to
+  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+@media only screen and (max-width: 576px) {
+  .full-center.full-center-sm {
+    /* 
+      disables full center
+      if breakpoint is reached
+    */
+    display: block;
+    height: inherit;
+  }
+  .full-center.full-center-sm-left {
+    /* 
+      disables full center
+      and sends the element
+      to the left if breakpoint
+      is reached
+    */
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+  }
+  .full-center.full-center-sm-right {
+    /* 
+      disables full center
+      and sends the element
+      to the right if breakpoint
+      is reached
+    */
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .full-center.full-center-md {
+    /* 
+      disables full center
+      if breakpoint is reached
+    */
+    display: block;
+    height: inherit;
+  }
+  .full-center.full-center-md-left {
+    /* 
+      disables full center
+      and sends the element
+      to the left if breakpoint
+      is reached
+    */
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+  }
+  .full-center.full-center-md-right {
+    /* 
+      disables full center
+      and sends the element
+      to the right if breakpoint
+      is reached
+    */
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .full-center.full-center-lg {
+    /* 
+      disables full center
+      if breakpoint is reached
+    */
+    display: block;
+    height: inherit;
+  }
+  .full-center.full-center-lg-left {
+    /* 
+      disables full center
+      and sends the element
+      to the left if breakpoint
+      is reached
+    */
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+  }
+  .full-center.full-center-lg-right {
+    /* 
+      disables full center
+      and sends the element
+      to the right if breakpoint
+      is reached
+    */
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .full-center.full-center-xl {
+    /* 
+      disables full center
+      if breakpoint is reached
+    */
+    display: block;
+    height: inherit;
+  }
+  .full-center.full-center-xl-left {
+    /* 
+      disables full center
+      and sends the element
+      to the left if breakpoint
+      is reached
+    */
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+  }
+  .full-center.full-center-xl-right {
+    /* 
+      disables full center
+      and sends the element
+      to the right if breakpoint
+      is reached
+    */
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-direction: row;
+  }
+}
+
+.button-reset, button {
+  border: none;
+  padding: 0.75rem 1rem;
+  line-height: 1;
+}
+.button-reset:hover, button:hover {
+  cursor: pointer;
+}
+.button-reset:focus, button:focus {
+  outline: none;
+  filter: brightness(0.9);
+}
+
+button {
+  background: #616161;
+  color: white;
+  font-weight: 700;
+  transition: all 0.25s;
+}
+button.outlined {
+  background: white;
+  box-shadow: inset 0px 0px 0px 3px #616161;
+  color: #616161;
+}
+button.outlined:hover {
+  background: #616161;
+  color: white;
+}
+button.hover-outlined {
+  box-shadow: inset 0px 0px 0px 3px #616161;
+}
+button.hover-outlined:hover {
+  background: white;
+  color: #616161;
+}
+button.hover-float:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+button.outlined-hover-fill {
+  background: white;
+  box-shadow: inset 0px 0px 0px 3px #616161;
+  color: #616161;
+}
+button.outlined-hover-fill:hover {
+  box-shadow: inset 0px 0px 0px 25px #616161;
+  color: white;
+}
+
 /*# sourceMappingURL=main.css.map */

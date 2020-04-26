@@ -1,0 +1,61 @@
+$button-background: #616161;
+$button-foreground: white;
+
+.button-reset {
+  border: none;
+  padding: .75rem 1rem;
+  line-height: 1;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+    filter: brightness(.9);
+  }
+}
+
+button {
+  @extend .button-reset;
+  background: $button-background;
+  color: $button-foreground;
+  font-weight: 700;
+  transition: all .25s;
+
+  &.outlined {
+    background: $button-foreground;
+    box-shadow: inset 0px 0px 0px 3px $button-background;
+    color: $button-background;
+
+    &:hover {
+      background: $button-background;
+      color: $button-foreground;
+    }
+  }
+
+  &.hover-outlined {
+    box-shadow: inset 0px 0px 0px 3px $button-background;
+
+    &:hover {
+      background: $button-foreground;
+      color: $button-background;
+    }
+  }
+
+  &.hover-float:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+  &.outlined-hover-fill {
+    background: $button-foreground;
+    box-shadow: inset 0px 0px 0px 3px $button-background;
+    color: $button-background;
+
+    &:hover {
+      box-shadow: inset 0px 0px 0px 25px $button-background;
+      color: $button-foreground;
+    }
+  }
+
+}
