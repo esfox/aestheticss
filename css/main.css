@@ -596,12 +596,6 @@
   align-items: center;
 }
 
-:root {
-  --duration-fast: .25s;
-  --zoom-amount: 1.1;
-  --darken-amount: .85;
-}
-
 .hover-zoom {
   position: relative;
   display: flex;
@@ -613,17 +607,17 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: transform var(--duration-fast);
+  transition: transform 0.25s;
 }
 .hover-zoom:hover .hover-zoom-child {
-  transform: scale(var(--zoom-amount));
+  transform: scale(1.1);
 }
 
 .hover-darken {
-  transition: filter var(--duration-fast);
+  transition: filter 0.25s;
 }
 .hover-darken:hover {
-  filter: brightness(var(--darken-amount));
+  filter: brightness(0.85);
 }
 
 /*# sourceMappingURL=main.css.map */

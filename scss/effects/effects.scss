@@ -1,8 +1,6 @@
-:root {
-  --duration-fast: .25s;
-  --zoom-amount: 1.1;
-  --darken-amount: .85;
-}
+$duration-fast: .25s;
+$zoom-amount: 1.1;
+$darken-amount: .85;
 
 .hover-zoom {
   position: relative;
@@ -15,21 +13,21 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: transform var(--duration-fast);
+    transition: transform $duration-fast
   }
 
   &:hover {
 
     .hover-zoom-child {
-      transform: scale(var(--zoom-amount));
+      transform: scale($zoom-amount);
     }
   }
 }
 
 .hover-darken {
-  transition: filter var(--duration-fast);
+  transition: filter $duration-fast;
 
   &:hover {
-    filter: brightness(var(--darken-amount));
+    filter: brightness($darken-amount);
   }
 }
