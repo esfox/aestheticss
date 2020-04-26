@@ -1,0 +1,16 @@
+$sm_label: 'sm';
+$md_label: 'md';
+$lg_label: 'lg';
+$xl_label: 'xl';
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$breakpoints: (
+    $sm_label: $sm,
+    $md_label: $md,
+    $lg_label: $lg,
+    $xl_label: $xl
+);

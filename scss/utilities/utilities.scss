@@ -8,3 +8,53 @@
   align-items: center;
 }
 
+.full-center {
+  /*
+    forces an element's contents to be centered
+    both vertically and horizontally
+    in the container where this class
+    is applied to
+  */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  @each $breakpoint, $size in $breakpoints {
+    @media only screen and (max-width:$size) {
+      &.full-center-#{$breakpoint} {
+        /* 
+          disables full center
+          if breakpoint is reached
+        */
+        display: block;
+        height: inherit;
+      }
+
+      &.full-center-#{$breakpoint}-left {
+        /* 
+          disables full center
+          and sends the element
+          to the left if breakpoint
+          is reached
+        */
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-direction: row;
+      }
+
+      &.full-center-#{$breakpoint}-right {
+        /* 
+          disables full center
+          and sends the element
+          to the right if breakpoint
+          is reached
+        */
+        justify-content: flex-end;
+        align-content: flex-end;
+        flex-direction: row;
+      }
+    }
+  }
+}
