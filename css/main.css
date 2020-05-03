@@ -587,6 +587,13 @@
   border-right-color: #343a40 !important;
 }
 
+:root {
+  --small: $sm;
+  --medium: $md;
+  --large: $lg;
+  --extralarge: $xl;
+}
+
 .flex, .flex-centered {
   display: flex;
 }
@@ -784,6 +791,7 @@ button.outlined-hover-fill:hover {
   box-shadow: inset 0px 0px 0px 25px #616161;
   color: white;
 }
+
 .hover-zoom {
   position: relative;
   display: flex;
