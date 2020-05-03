@@ -14,3 +14,10 @@ $breakpoints: (
     $lg_label: $lg,
     $xl_label: $xl
 );
+
+:root {
+    --small: $sm;
+    --medium: $md;
+    --large: $lg;
+    --extralarge: $xl;
+}
